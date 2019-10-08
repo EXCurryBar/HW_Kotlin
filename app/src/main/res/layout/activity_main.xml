@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="377dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="請輸入玩家姓名"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+            android:text="輸入玩家姓名開始遊戲"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_text" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="78dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="229dp"
+            android:layout_marginRight="229dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+                android:id="@+id/btn_scissor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="剪刀" />
+
+        <RadioButton
+                android:id="@+id/btn_stone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="石頭" />
+
+        <RadioButton
+                android:id="@+id/btn_paper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="布" />
+    </RadioGroup>
+    <Button
+            android:text="猜拳"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_mora" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="158dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="名字"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="222dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="勝利"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_winner" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="222dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="114dp" android:layout_marginStart="114dp"/>
+    <TextView
+            android:text="我方出拳"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mmora" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="222dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="208dp" android:layout_marginStart="208dp"/>
+    <TextView
+            android:text="電腦出拳"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cmora" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="222dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="300dp" android:layout_marginStart="300dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
